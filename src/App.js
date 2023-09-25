@@ -29,7 +29,7 @@ const App = () => {
     <>
       <div>
         <Navbar />
-        <main className="pt-20 bg-slate-500 min-h-screen">
+        <main className="pt-20 bg-slate-700 min-h-screen">
           <Outlet />
         </main>
       </div>

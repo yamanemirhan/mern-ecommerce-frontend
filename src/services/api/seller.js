@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:4000/api/seller",
+  baseURL: "https://mern-ecommerce-cy7j.onrender.com/api/seller",
   timeout: 5000, // İsteklerin zaman aşımı süresi (ms)
   withCredentials: true,
 });

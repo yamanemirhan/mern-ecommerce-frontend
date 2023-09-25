@@ -21,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     try {
       const fetchProducts = async () => {
-        setProductsLoading(true); // Loading başladı
+        setProductsLoading(true);
         const queryString = `?search=${searchQuery}&page=${currentPage}&sortBy=${selectedSort}`;
         dispatch(getAllProducts(queryString)).then((res) => {
           if (res.payload.success) {
@@ -29,12 +29,12 @@ const Home = () => {
             setProductsLength(res.payload.data.count);
           }
         });
-        setProductsLoading(false); // Loading tamamlandı
+        setProductsLoading(false);
       };
       fetchProducts();
     } catch (error) {
       console.log(error);
-      setProductsLoading(false); // Loading tamamlandı (hata durumunda da)
+      setProductsLoading(false);
     }
   }, [searchQuery, currentPage, selectedSort]);
 

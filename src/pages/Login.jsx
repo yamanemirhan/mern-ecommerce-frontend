@@ -41,17 +41,17 @@ const Login = () => {
   }, [dispatch, isLoggedIn]);
 
   return (
-    <div className="h-screen bg-slate-500 flex items-center justify-center">
-      <div className="w-[95%] lg:w-[85%] h-[95%] lg:h-[65%] rounded-lg bg-slate-400 shadow-md shadow-slate-600 flex lg:flex-row flex-col gap-2">
+    <div className="min-h-screen bg-slate-500 flex items-center justify-center">
+      <div className="w-[95%] lg:w-[85%]  rounded-lg bg-slate-400 shadow-md shadow-slate-600 flex lg:flex-row flex-col gap-2 items-center">
         {/* left or up */}
-        <div className="h-1/2 lg:h-full w-full lg:w-1/2">
+        <div className="">
           <img
-            src="https://media.istockphoto.com/id/1496678148/tr/foto%C4%9Fraf/exultant-company-employee-with-gadgets-standing-in-empty-office-corridor.jpg?s=612x612&w=0&k=20&c=F5CPlmPmulBfyBXaPbzqgW7ZGWjtHl5NGWZHrogToyE="
-            className="w-full h-full object-cover"
+            src="https://cdn.pixabay.com/photo/2022/11/12/07/50/moscow-7586398_640.jpg"
+            className="w-[480px] h-[640px] object-cover"
           />
         </div>
         {/* right or down*/}
-        <div className="flex-1 lg:h-full flex flex-col gap-8 lg:gap-10 lg:pt-28">
+        <div className="flex-1 lg:h-full flex flex-col gap-2 lg:gap-6">
           <h2 className="text-center text-3xl">Login</h2>
           <form
             onSubmit={handleLogin}

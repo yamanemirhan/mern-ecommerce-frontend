@@ -115,7 +115,7 @@ function SellerEditProductModal({ onClose, selectedProduct, header }) {
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-3">
           <div className="flex flex-col items-center xl:flex-row gap-3">
             <div className="relative  xl:flex-1">
-              {previewImage ? ( // Show preview image if available
+              {previewImage ? (
                 <img
                   src={previewImage}
                   alt={formData.name}

@@ -56,7 +56,7 @@ const SellerNavbar = () => {
       <div className="w-full flex justify-between sm:justify-around items-center px-2">
         {/* left */}
         <h1 className="uppercase">
-          <Link to="/">Ecommerce</Link>
+          <Link to="/seller">Ecommerce</Link>
         </h1>
         {/* right */}
         <div className="flex items-center gap-10">

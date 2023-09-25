@@ -55,13 +55,13 @@ const Register = () => {
   }, [dispatch, isLoggedIn]);
 
   return (
-    <div className="p-3 bg-slate-500 flex items-center justify-center">
-      <div className="w-[95%] lg:w-[85%]  rounded-lg bg-slate-400 shadow-md shadow-slate-600 flex lg:flex-row flex-col gap-2">
+    <div className="p-3 bg-slate-500 flex items-center justify-center min-h-screen">
+      <div className="w-[95%] lg:w-[85%]  rounded-lg bg-slate-400 shadow-md shadow-slate-600 flex lg:flex-row flex-col gap-2 items-center">
         {/* left or up */}
-        <div className="h-[calc(100vh-24px)] w-full lg:w-1/2">
+        <div>
           <img
-            src="https://media.istockphoto.com/id/1496678148/tr/foto%C4%9Fraf/exultant-company-employee-with-gadgets-standing-in-empty-office-corridor.jpg?s=612x612&w=0&k=20&c=F5CPlmPmulBfyBXaPbzqgW7ZGWjtHl5NGWZHrogToyE="
-            className="w-full h-full object-cover"
+            src="https://cdn.pixabay.com/photo/2022/11/12/07/50/moscow-7586398_640.jpg"
+            className="w-[480px] h-[640px] object-cover"
           />
         </div>
         {/* right or down*/}
@@ -72,9 +72,6 @@ const Register = () => {
             className="flex flex-col gap-3 text-lg lg:h-full"
           >
             <div className="flex flex-col">
-              <label htmlFor="firstName" className="text-center">
-                First Name
-              </label>
               <input
                 required
                 value={formData.firstName}
@@ -82,13 +79,11 @@ const Register = () => {
                 type="text"
                 id="firstName"
                 name="firstName"
+                placeholder="First Name"
                 className="w-[calc(100%-20px)] mx-auto"
               />
             </div>
             <div className="flex flex-col gap-1">
-              <label htmlFor="lastName" className="text-center">
-                Last Name
-              </label>
               <input
                 required
                 value={formData.lastName}
@@ -96,13 +91,11 @@ const Register = () => {
                 type="text"
                 id="lastName"
                 name="lastName"
+                placeholder="Last Name"
                 className="w-[calc(100%-20px)] mx-auto"
               />
             </div>
             <div className="flex flex-col gap-1">
-              <label htmlFor="email" className="text-center">
-                Email
-              </label>
               <input
                 required
                 value={formData.email}
@@ -110,13 +103,11 @@ const Register = () => {
                 type="email"
                 id="email"
                 name="email"
+                placeholder="Email"
                 className="w-[calc(100%-20px)] mx-auto"
               />
             </div>
             <div className="flex flex-col gap-1">
-              <label htmlFor="password" className="text-center">
-                Password
-              </label>
               <input
                 required
                 value={formData.password}
@@ -124,13 +115,11 @@ const Register = () => {
                 type="password"
                 id="password"
                 name="password"
+                placeholder="Password"
                 className="w-[calc(100%-20px)] mx-auto"
               />
             </div>
             <div className="flex flex-col gap-1">
-              <label htmlFor="confirmPassword" className="text-center">
-                Confirm Password
-              </label>
               <input
                 required
                 value={formData.confirmPassword}
@@ -138,6 +127,7 @@ const Register = () => {
                 type="password"
                 id="confirmPassword"
                 name="confirmPassword"
+                placeholder="Confirm Password"
                 className="w-[calc(100%-20px)] mx-auto"
               />
             </div>

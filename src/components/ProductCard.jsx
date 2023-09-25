@@ -109,7 +109,7 @@ const ProductCard = ({
   return (
     <Link
       to={!isSeller ? `/product/${product._id}` : `product/${product._id}`}
-      className="border relative text-white rounded-md bg-slate-600 shadow-md shadow-slate-600 cursor-pointer hover:scale-105 duration-500"
+      className="border relative text-white rounded-md bg-slate-800 shadow-md shadow-slate-600 cursor-pointer hover:scale-105 duration-500"
     >
       {showConfirmDelete && (
         <div className="absolute border top-0 bg-slate-500 rounded-md p-5 m-2 z-50 text-black shadow-md shadow-slate-600">
@@ -206,7 +206,7 @@ const ProductCard = ({
         <div className="flex justify-between items-center mx-2">
           <div className="flex items-center">
             <AiFillStar size={20} color="yellow" />
-            <span className="text-xl ml-1">{product.star}</span>
+            <span className="text-xl">{product.star}</span>
           </div>
           <span>${product.price}</span>
         </div>
