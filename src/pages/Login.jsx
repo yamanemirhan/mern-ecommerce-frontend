@@ -93,7 +93,7 @@ const Login = () => {
               type="submit"
               className="bg-slate-600 font-semibold text-white w-fit mx-auto lg:mt-3 py-2 px-10 rounded-lg"
             >
-              {isLoadingLogin ? "Loginning..." : "Login"}
+              {isLoadingLogin ? "Logging in..." : "Login"}
             </button>
             <div className="lg:mt-4 text-center text-base">
               Don't have an account?{" "}
